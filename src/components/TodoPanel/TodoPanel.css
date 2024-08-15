@@ -1,0 +1,53 @@
+.panel {
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 10px 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.panel::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -20px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(15deg, rgba(233, 6, 178, 0.93), #d0e);
+    z-index: -1;
+    border-radius: 12px;
+    filter: blur(8px);
+}
+
+.panel button,
+.filters button {
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.filters button.active,
+.filters button:hover {
+    background: rgba(255, 255, 255, 0.4);
+    color: rgba(239, 10, 51, 0.7);
+}
+
+.panel button:hover,
+.filters button:hover {
+    background: rgba(255, 255, 255, 0.47);
+}

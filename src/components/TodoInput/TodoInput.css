@@ -1,0 +1,16 @@
+.todo-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box; /* Учитываем padding в ширине элемента */
+    max-width: 100%; /* Ограничиваем ширину */
+    word-wrap: break-word; /* Переносим слова */
+}
+
+.todo-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}

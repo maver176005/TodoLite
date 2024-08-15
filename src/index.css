@@ -1,0 +1,59 @@
+/* Корневые переменные для удобства управления темой */
+:root {
+  --glass-bg: rgba(162, 185, 199, 0.2); /* Полупрозрачный фон */
+  --glass-border: rgba(255, 255, 255, 0.4); /* Полупрозрачная граница */
+  --glass-shadow: rgba(0, 0, 0, 0.1); /* Мягкая тень */
+  --glass-blur: 15px; /* Радиус размытия */
+  --glass-radius: 20px; /* Скругленные углы */
+  --glass-gradient: linear-gradient(15deg, #9298b4, #093aa2); /* Градиентный фон */
+
+}
+
+/* Основной стиль для глассморфизма */
+.glass {
+  background: var(--glass-bg);
+  border-radius: var(--glass-radius);
+  box-shadow: 0 8px 32px 0 var(--glass-shadow); /* Мягкая тень */
+  backdrop-filter: blur(var(--glass-blur)); /* Эффект размытия фона */
+  -webkit-backdrop-filter: blur(var(--glass-blur)); /* Поддержка для Safari */
+  border: 1px solid var(--glass-border); /* Полупрозрачная граница */
+  padding: 2rem;
+  max-width: 90%;
+  width: 600px;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background: var(--glass-gradient);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 24px;
+  text-align: center;
+  border-radius: var(--glass-radius);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 4px 6px var(--glass-shadow);
+  color: rgba(76, 77, 130, 0.86);
+}
+
+h1, p {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: rgba(76, 77, 130, 0.86);
+}
+
+

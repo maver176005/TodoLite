@@ -1,0 +1,40 @@
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 8px 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    word-wrap: break-word;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.todo-item.completed {
+    background: rgba(0, 255, 0, 0.2); /* Изменяем фон для выполненных задач */
+    text-decoration: line-through; /* Зачеркнутый текст для выполненных задач */
+    color: rgba(255, 255, 255, 0.6); /* Меняем цвет текста */
+}
+
+.todo-item .text {
+    max-width: 80%;
+    overflow-wrap: break-word;
+    color: #0e0a0a;
+}
+
+.todo-item button {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    cursor: pointer;
+    color: rgba(222, 7, 7, 0.66);
+    transition: background 0.3s ease;
+}
+
+.todo-item button:hover {
+    background: rgba(213, 8, 8, 0.4);
+    color: #fff;
+}
